@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>..:IoT transporte:..</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img src="{{url_for('static', filename='images/logo.png')}}" alt="logo iot" class="logo">
+            </div>
+            <ul class="nav">
+                <li class="nav-items"><a href="" class="nav-link">Fundametacion</a></li>
+                <li class="nav-items"><a href="" class="nav-link">Modelos</a></li>
+                <li class="nav-items"><a href="" class="nav-link">ETL</a></li>
+                <!-- <li class="nav-items"><a href="" class="nav-link"></a></li> -->
+                <!-- <li class="nav-items"><a href="" class="nav-link">Conclusiones</a></li> -->
+            </ul>
+            <div class="nav-project">
+                <button class="nav-button">Analisis</button>
+            </div>
+        </nav>      
+    </header>
+    <main>
+        <div class="fundamentacion">
+           <!--  <img src="/imgs/city2.png" alt="imagen-fundam" class="img-fundam"> -->
+            <div class="content-fundam">
+                <h1>¿TRANSPORTE CON IoT?</h1>
+                <p class="content-p">El transporte con IoT integra tecnología conectada para monitorear vehículos, rutas y tráfico en tiempo real. Permite optimizar la operación, reducir costos y aumentar la seguridad mediante el análisis de datos. Este enfoque impulsa una movilidad más eficiente, sostenible y adaptada a las necesidades modernas del transporte inteligente.</p>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" class="ola">
+            <path fill="#00cba9a0" fill-opacity="1" 
+                d="M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,117.3C960,107,1056,117,1152,122.7C1248,128,1344,128,1392,128L1440,128L1440,0L0,0Z">
+            </path>
+        </svg>
+        <div class="procedimiento">
+            <h2 class="subtittle subtittle-procedimiento">METODOLOGIA</h2>
+            <ul class="stepswork">
+                <li class="comprension-problem step" style="grid-area: box-li1" >
+                    <div class="description">
+                        <h3 class="tittle-step">1. Comprension del Problema</h3>
+                        <div class="desc-step">
+                            <p class="desc-p">
+                                El proyecto busca analizar y optimizar el sistema de transporte público una ciudad inteligente con IoT, tomando como modelo a TransMilenio.<br> Su objetivo principal es mejorar la eficiencia y experiencia del usuario mediante el análisis de datos sobre rutas, estaciones, usuarios y vehículos.
+                            </p>
+                            
+                        </div>
+                    </div>
+                </li>
+                <div class="img-s step" style="grid-area: box-img1">
+                    <img src="{{url_for('static', filename='images/city2.png')}}" alt="city" class="img-step" >
+                </div>
+                <li class="comprension-datos step" style="grid-area: box-li2">
+                    <div class="description">
+                        <h3 class="tittle-step">2. Comprension de los datos</h3>
+                        <div class="desc-step">
+                            <p class="desc-p">
+                                Se trabajó con datos simulados que representan el funcionamiento del sistema TransMilenio. Se definieron entidades como Usuarios, Rutas, Estaciones, EstacionesxRuta y Vehículos. <br>Se analizaron las características y relaciones de los datos creados, verificando su coherencia y corrigiendo inconsistencias para asegurar que reflejaran adecuadamente un entorno real de transporte público.
+                            </p>
+                        </div>
+                        <img src="{{url_for('static', filename='images/mapa de transmilenios.png')}}" alt="rutas de trasmi" class="img-compdata">
+                    </div>
+                </li>
+
+                 <li class="preparacion-datos step" style="grid-area: box-li3">
+                    <div class="description">
+                        <h3 class="tittle-step">3. Preparacion de los datos</h3>
+                        <div class="desc-step">
+                            <p class="desc-p">
+                                Se realizó la transferencia y transformación de los datos simulados desde el modelo relacional hacia un Data Warehouse multidimensional. <br>Durante el proceso ETL, se limpiaron, seleccionaron e integraron los datos de Usuarios, Rutas, Estaciones, EstacionesxRuta y Vehículos, obteniendo una base consistente y lista para el análisis del sistema de transporte.  
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="modelado step" style="grid-area: box-li4">
+                    <div class="description">
+                        <h3 class="tittle-step">4.Modelado</h3>
+                        <div class="desc-step">
+                            <p class="desc-p">    
+                                Con la información ya en el Data Warehouse, se desarrollaron modelos analíticos para identificar patrones y comportamientos dentro del sistema de transporte.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="evaluancion step" style="grid-area: box-li5">
+                    <div class="description">
+                        <h3 class="tittle-step">5.Evaluacion</h3>
+                        <div class="desc-step">
+                            <p class="desc-p"> 
+                                En esta fase se evaluaron los resultados obtenidos del modelado para verificar que cumplieran con los objetivos del proyecto.  
+                            </p>
+                            <img src="/imgs/iot-izq.png" alt="" class="img-eva">
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="despliegue step" style="grid-area: box-li6">
+                    <div class="description">
+                        <h3 class="tittle-step">6. Despliegue</h3>
+                        <div class="desc-step">
+                            <p class="desc-p"> 
+                                Finalmente, los resultados se presentaron mediante reportes y paneles de visualización que muestran indicadores clave del sistema de transporte
+                            </p>
+                            <div class="div-frame">
+                                <img title="IoT_Transporte" width="500" height="300" src="{{url_for('static', filename='images/captura ppowe.jpg')}}"  class="frame"></img>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="ola">
+            <path fill="#00cba9a0" fill-opacity="1" d="M0,64L34.3,96C68.6,128,137,192,206,181.3C274.3,171,343,85,411,53.3C480,21,549,43,617,69.3C685.7,96,754,128,823,133.3C891.4,139,960,117,1029,96C1097.1,75,1166,53,1234,42.7C1302.9,32,1371,32,1406,32L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+        </svg>
+
+        <div class="modelos">
+            <h2 class="subtittle subtittle-modelos">Modelos</h2>
+            <div class="info-modelos">
+                <div class="grid-element content-p">
+                    <h3 class="model-tittle" >Descripcion</h3>   
+                    <p class="p-info " style="grid-area: paragraph-modelo;">
+                        La construccion de la informacion se establecio a travez del modelo relacional para el almacenamiento de los datos. <br>Por otro lado, para el analisis de la informacion se establecion a travez de un modelo multidimensional, para ser mas especifico, se realizo la construccion de un data Warehouse
+                    </p>
+
+                </div>
+                <div class="modelo-relacional grid-element models" style="grid-area: rela-modelo;">
+                    <h3 class="model-tittle" >Modelo Relacional</h3>
+                    <img src="{{url_for('static', filename='images/relacional.png')}}" alt="Modelo relacional" class="model-img">
+                </div>
+                <div class="modelo-multidimencional grid-element models" style="grid-area: multi-modelo;">
+                    <h3 class="model-tittle" >Modelo Multidimensional</h3>
+                    <img src="{{url_for('static', filename='images/multi.png')}}" alt="Modelo Multidimensional" class="model-img">
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 180" class="ola">
+            <path fill="#00CBA9" fill-opacity="1" 
+                d="M0,160L48,138.7C96,117,192,75,288,80C384,85,480,139,576,149.3C672,160,768,128,864,117.3C960,107,1056,117,1152,122.7C1248,128,1344,128,1392,128L1440,128L1440,0L0,0Z">
+            </path>
+        </svg>
+
+        <div class="etl">
+            <h2 class="subtittle subtittle-etl">ETL</h2>
+            <div class="content-etl">
+                <p class="p-etl">
+                    El proceso ETL (Extract, Transform, Load) es una metodología utilizada para extraer datos de diferentes fuentes, transformarlos según las necesidades del análisis y cargarlos en un sistema de almacenamiento central, como un Data Warehouse. En el proyecto del sistema de transporte público, el ETL se aplicó para trasladar la información simulada del modelo relacional al modelo multidimensional, garantizando su limpieza, consistencia y estructura adecuada. Durante este proceso, se extrajeron los datos de las entidades principales (Usuarios, Rutas, Estaciones, EstacionesxRuta y Vehículos), se transformaron mediante la estandarización de formatos y la creación de indicadores, y finalmente se cargaron en el Data Warehouse, permitiendo realizar análisis más eficientes y obtener una visión integral del funcionamiento del sistema.
+                </p>
+                <div class="diagrams-etl">
+                    <div class="data-etl">
+                        <div class="grid-etl">
+                            <h3 class="tittle-elt elem-etl" style="grid-area: elt-litittle;">Dimension Ruta</h3>
+                            <p class="elem-etl" style="grid-area: elt-descript;">
+                                Esta dimensión carga los datos de las rutas desde una fuente OLE DB hacia su destino en el Data Warehouse. Es un flujo directo, ya que los datos no requieren transformaciones intermedias.
+                            </p>
+                            <img src="{{url_for('static', filename='images/ruta.jpg')}}" alt="" class="img-etl elem-etl" style="grid-area: elt-img;">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="data-etl">
+                        <div class="grid-etl">
+                            <h3 class="tittle-elt elem-etl" style="grid-area: elt-litittle;">Dimension Vehiculo</h3>
+                            <p class="data-etl elem-etl" style="grid-area: elt-descript;">
+                                Incluye un flujo más complejo: los datos se extraen desde OLE DB, se aplican transformaciones mediante una columna derivada (para crear o ajustar valores) y luego una búsqueda (lookup) para relacionar claves con otras tablas antes de cargarse en el destino OLE DB.
+                            </p>
+                            <img src="{{url_for('static', filename='images/vehiculos.jpg')}}" alt="" class="img-etl elem-etl" style="grid-area: elt-img;">
+                        </div>
+                    </div>
+                    <div class="data-etl">
+                        <div class="grid-etl">
+                            <h3 class="tittle-elt elem-etl" style="grid-area: elt-litittle;">Dimension estacion</h3>
+                            <p class="data-etl elem-etl" style="grid-area: elt-descript;">
+                                Al igual que la dimensión Ruta, este flujo realiza una carga directa desde la fuente OLE DB hacia el destino. No requiere transformaciones adicionales, ya que los datos están listos para insertarse en la tabla dimensional.
+                            </p>
+                            <img src="{{url_for('static', filename='images/estacion.jpg')}}" alt="" class="img-etl elem-etl" style="grid-area: elt-img;">
+                        </div>
+                    </div>
+                    <div class="data-etl">
+                        <div class="grid-etl grid-usu">
+                            <h3 class="tittle-elt elem-etl" style="grid-area: elt-litittle;">Dimension Usuario</h3>
+                            <p class="data-etl elem-etl p-usu" style="grid-area: elt-descript;">
+                                El flujo extrae los datos desde OLE DB, genera nuevos campos o formatea datos mediante una columna derivada, y realiza una búsqueda para vincular información con otras tablas antes de cargar los datos en el destino OLE DB.
+                            </p>
+                            <img src="{{url_for('static', filename='images/usuarios.jpg')}}" alt="" class="img-etl elem-etl img4etl" style="grid-area: elt-img;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="ola">
+            <path fill="#00CBA9" fill-opacity="1" d="M0,64L34.3,96C68.6,128,137,192,206,181.3C274.3,171,343,85,411,53.3C480,21,549,43,617,69.3C685.7,96,754,128,823,133.3C891.4,139,960,117,1029,96C1097.1,75,1166,53,1234,42.7C1302.9,32,1371,32,1406,32L1440,32L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+        </svg>
+        <div class="analisis">
+            <h2 class="subtittle subtittle-analisis">ANALISIS</h2>
+            <div class="contenedor-analisis">
+                <div class="desc-dt grid-lisis-element"  style="grid-area: lis-elem1">
+                    <h3 class="sub-analisis">Description</h3>
+                    <p class="p-analisis">
+                        Este panel ofrece una visión integral del sistema de transporte, combinando indicadores clave —como el total de vehículos, rutas, eventos y estaciones— con mapas y gráficos interactivos. Permite analizar la distribución y cobertura de la red, identificar zonas de mayor demanda y observar la evolución del volumen de usuarios en diferentes periodos. Además, facilita el seguimiento del comportamiento de los usuarios por hora, día y mes, destacando patrones y picos de uso para optimizar la operación del sistema.
+                    </p>
+                </div>
+                <div class="general-data grid-lisis-element" style="grid-area: lis-elem2">
+                    <h3 class="sub-analisis">Informacion general</h3>
+                    <p class="p-analisis">
+                        Este panel resume el estado del sistema de transporte mostrando totales de vehículos, rutas, eventos y estaciones, junto con un mapa que ubica las estaciones y permite visualizar la cobertura y distribución de la red en la ciudad.
+                    </p>
+                </div>
+                <div class="general-data grid-lisis-element" style="grid-area: lis-elem3">
+                    <h3 class="sub-analisis">Informacion recuento usuarios</h3>
+                    <p class="p-analisis">
+                        El panel integra mapas y gráficos interactivos que reflejan el volumen de usuarios por estación y su evolución mensual. Esta representación geográfica permite identificar las zonas con mayor demanda y optimizar la gestión del servicio de transporte en toda la red.
+                    </p>
+                </div>
+                <div class="general-data grid-lisis-element" style="grid-area: lis-elem4">
+                    <h3 class="sub-analisis">Informacion flujo de personas</h3>
+                    <p class="p-analisis">
+                        Visualización del comportamiento de los usuarios por hora, día y mes, destacando los picos de uso y las tendencias generales del sistema de transporte.
+                    </p>
+                </div>
+                <div class="data grid-lisis-element" style="grid-area: lis-frame3">
+                    <iframe title="IoT_Transporte" width="800" height="573.5" src="https://app.powerbi.com/view?r=eyJrIjoiMmIwMjYxYmYtZmQ5Yy00NmQ0LTg0NmMtMzIzZWQ3NTdmMGYxIiwidCI6IjA3ZGE2N2EwLTFmNDMtNGU4Yy05NzdmLTVmODhiNjQ3MGVlNiIsImMiOjR9" frameborder="0" allowFullScreen="true" class="frame"></iframe>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
